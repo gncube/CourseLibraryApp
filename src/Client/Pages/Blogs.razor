@@ -1,0 +1,41 @@
+﻿@page "/blogsmaster"
+@inject HttpClient Http
+@inject ILocalStorageService localStorage
+
+<PageTitle>Blogs Master</PageTitle>
+
+<section class="g-py-30">
+    <div class="container">
+        <h1>Blogs Master</h1>
+        <p>This component demonstrates fetching data from the server.</p>
+
+        @if (BlogList == null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Blog Id</th>
+                        <th>Blog Title</th>
+                        <th>Blog Content</th>
+                        <th>Blog Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var blog in BlogList)
+                    {
+                        <tr>
+                            <td>@blog.Id</td>
+                            <td>@blog.Title</td>
+                            <td>@blog.SubTitle</td>
+                            <td></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</section>

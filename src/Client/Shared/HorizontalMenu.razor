@@ -1,0 +1,53 @@
+﻿<button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 ml-auto" type="button" @onclick="ToggleNavMenu">
+    <span class="hamburger hamburger--slider g-pa-0">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </span>
+</button>
+
+<div class="@NavMenuCssClass navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar" @onclick="ToggleNavMenu">
+    <ul class="navbar-nav g-font-weight-600">
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="" Match="NavLinkMatch.All">
+                Home
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="about-us">
+                About
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="blogs">
+                Blogs
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="books">
+                Books
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="messages">
+                Messages
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="counter">
+                Counter
+            </NavLink>
+        </li>
+
+        <li class="nav-item g-mx-10--lg g-mx-20--xl">
+            <NavLink class="nav-link text-uppercase g-color-primary--hover g-px-0" href="videos">
+                Videos
+            </NavLink>
+        </li>
+    </ul>
+</div>

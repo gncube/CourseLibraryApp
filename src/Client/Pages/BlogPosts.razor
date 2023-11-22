@@ -1,0 +1,23 @@
+﻿@page "/blogs"
+@page "/blogposts"
+@inject HttpClient Http
+@inject ILocalStorageService localStorage
+
+<PageTitle>Blogs</PageTitle>
+
+<section class="g-py-30">
+    <div class="container">
+
+        @if (BlogPostList is null)
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            @foreach (var blogPost in BlogPostList)
+            {
+                <BlogCard PromoArticle="@blogPost"></BlogCard>
+            }
+        }
+    </div>
+</section>

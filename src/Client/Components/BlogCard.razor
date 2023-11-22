@@ -1,0 +1,46 @@
+﻿<div class="row g-mb-30">
+
+    <div class="col-md-5">
+        <figure class="u-shadow-v25 g-pos-rel g-mb-20 g-mb-0--lg">
+            <img title="@PromoArticle.Title" class="img-fluid w-100" src="assets/img-temp/430x270/img1.jpg">
+            <figcaption class="g-pos-abs g-top-20 g-left-20">
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="col-md-7 align-self-center">
+        <h3 class="h4 g-mb-15">
+            <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover" href="@($"blogposts/{PromoArticle.Id}")">
+                @PromoArticle.Title
+            </a>
+        </h3>
+
+        <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
+            <li class="list-inline-item">
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="https://planetministries.org.uk/blogs?author=2">Dr. Max Matonhodze</a>
+            </li>
+            <li class="list-inline-item">/</li>
+            <li class="list-inline-item moment" data-time="2023-10-23 00:00:00">13 hours ago</li>
+            <li class="list-inline-item">/</li>
+            <li class="list-inline-item">
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#">
+                    <i class="icon-education-174 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
+                    @PromoArticle.Id
+                </a>
+            </li>
+            <li class="list-inline-item">/</li>
+            <li class="list-inline-item">
+                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#">
+                    <i class="icon-finance-206 u-line-icon-pro align-middle g-pos-rel g-top-1 mr-1"></i>
+                    @PromoArticle.BlogId
+                </a>
+            </li>
+        </ul>
+        <p class="g-color-gray-dark-v2">
+           @PromoArticle.Title   </p>
+        <ul class="list-inline g-color-gray-dark-v4 g-font-size-12">
+        </ul>
+        <a class="g-font-size-12" href="@($"blogposts/{PromoArticle.Id}")">Read More..</a>
+    </div>
+
+</div>
