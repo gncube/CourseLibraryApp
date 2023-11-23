@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Function App courselibrary
+name: Build and deploy .NET7 application to Function App courselibrary
 on:
   push:
     branches:
