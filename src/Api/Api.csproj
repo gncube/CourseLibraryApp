@@ -14,11 +14,17 @@
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Api.Application\Api.Application.csproj" />
+    <ProjectReference Include="..\Api.Domain\Api.Domain.csproj" />
+    <ProjectReference Include="..\Api.Infrastructure\Api.Infrastructure.csproj" />
     <ProjectReference Include="..\Blogifier.Application\Blogifier.Application.csproj" />
     <ProjectReference Include="..\Blogifier.Domain\Blogifier.Domain.csproj" />
     <ProjectReference Include="..\Blogifier.Infrastructure\Blogifier.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="CourseLibraryDB.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
