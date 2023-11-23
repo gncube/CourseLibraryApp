@@ -1,4 +1,7 @@
-﻿using Blazored.LocalStorage;
+﻿using Api.Domain;
+using Blazored.LocalStorage;
+using Client.Application.Contracts;
+using Client.Infrastructure.DataServices;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
@@ -20,6 +23,8 @@ public static class RegisterDependencyInjection
         {
             PropertyNameCaseInsensitive = true
         });
+
+        services.AddScoped<IDataService<Author, Guid>, AuthorDataService>();
 
         services.AddBlazoredLocalStorageAsSingleton();
 
